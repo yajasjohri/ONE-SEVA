@@ -1,0 +1,6 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"name":"Maharashtra","state_code":"MH"},"geometry":{"type":"Polygon","coordinates":[[[72.4,15.6],[80.9,15.6],[80.9,22.1],[72.4,22.1],[72.4,15.6]]]}}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"claim_id":"CLM-1001","claimant":"Asha","state":"MH","status":"pending"},"geometry":{"type":"Point","coordinates":[72.8777,19.0760]}},
+    {"type":"Feature","properties":{"claim_id":"CLM-1002","claimant":"Ravi","state":"MP","status":"approved"},"geometry":{"type":"Point","coordinates":[77.4126,23.2599]}},
+    {"type":"Feature","properties":{"claim_id":"CLM-1003","claimant":"Sita","state":"OD","status":"rejected"},"geometry":{"type":"Point","coordinates":[85.8245,20.2961]}}
+  ]
+}

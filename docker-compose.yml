@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    environment:
+      - FLASK_ENV=production
+      - PORT=5001
+      - CORS_ORIGINS=http://localhost
+      - SECRET_KEY=${SECRET_KEY:-change-me}
+    ports:
+      - "5001:5001"
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE: http://localhost:5001/api
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+

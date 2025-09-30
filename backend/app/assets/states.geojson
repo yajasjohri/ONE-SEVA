@@ -1,0 +1,8 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"name":"Maharashtra","state_code":"MH"},"geometry":{"type":"Polygon","coordinates":[[[72.5,18.8],[73.5,18.8],[73.5,19.6],[72.5,19.6],[72.5,18.8]]]}},
+    {"type":"Feature","properties":{"name":"Madhya Pradesh","state_code":"MP"},"geometry":{"type":"Polygon","coordinates":[[[77.0,22.0],[78.0,22.0],[78.0,23.0],[77.0,23.0],[77.0,22.0]]]}},
+    {"type":"Feature","properties":{"name":"Odisha","state_code":"OD"},"geometry":{"type":"Polygon","coordinates":[[[85.5,20.0],[86.5,20.0],[86.5,21.0],[85.5,21.0],[85.5,20.0]]]}}
+  ]
+}

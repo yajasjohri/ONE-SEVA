@@ -1,0 +1,75 @@
+/* Basic layout and navbar */
+:root { --bg: #0b1020; --fg: #e6e9f2; --muted: #98a2b3; --accent: #3b82f6; }
+body { background: var(--bg); color: var(--fg); margin: 0; font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; }
+
+.navbar { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); position: sticky; top: 0; background: rgba(11,16,32,0.8); backdrop-filter: blur(8px); z-index: 100; }
+.brand { font-weight: 700; letter-spacing: 0.3px; }
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+.tab { padding: 8px 12px; border-radius: 8px; color: var(--muted); cursor: pointer; border: 1px solid transparent; }
+.tab.active { color: var(--fg); background: rgba(59,130,246,0.15); border-color: rgba(59,130,246,0.35); }
+.content { padding: 16px; }
+
+/* Leaflet container sizing */
+.map-container { height: calc(100vh - 70px); width: 100%; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+
+/* Reset Vite starter styles */
+.logo, .card, .read-the-docs { display: none; }
+
+/* Map overlay controls */
+.map-controls { position: absolute; top: 90px; right: 24px; background: rgba(11,16,32,0.9); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 10px 12px; color: var(--fg); z-index: 1000; min-width: 220px; }
+.map-controls h4 { margin: 0 0 6px 0; font-size: 13px; color: var(--muted); font-weight: 600; }
+.map-controls .row { display: flex; align-items: center; gap: 8px; margin: 4px 0; font-size: 13px; }
+.legend { position: absolute; bottom: 24px; right: 24px; background: rgba(11,16,32,0.9); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 8px 12px; color: var(--fg); z-index: 1000; }
+.legend .item { display: flex; align-items: center; gap: 8px; font-size: 12px; margin: 4px 0; }
+.legend .swatch { width: 14px; height: 14px; border-radius: 3px; border: 1px solid rgba(255,255,255,0.2); }
+
+/* Home hero */
+.hero { max-width: 1000px; margin: 0 auto; }
+.hero h1 { margin: 8px 0 6px 0; }
+.hero p { color: var(--muted); line-height: 1.6; }
+.hero-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 16px; }
+.cardish { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 12px; }
+.hero-note { margin-top: 16px; background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25); border-radius: 10px; padding: 10px 12px; }
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

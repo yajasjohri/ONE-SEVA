@@ -1,0 +1,6 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"name":"Tripura","state_code":"TR"},"geometry":{"type":"Polygon","coordinates":[[[91.0,22.9],[92.5,22.9],[92.5,24.6],[91.0,24.6],[91.0,22.9]]]}}
+  ]
+}

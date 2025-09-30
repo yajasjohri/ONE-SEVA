@@ -1,0 +1,6 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"name":"Madhya Pradesh","state_code":"MP"},"geometry":{"type":"Polygon","coordinates":[[[74.0,21.0],[82.0,21.0],[82.0,26.5],[74.0,26.5],[74.0,21.0]]]}}
+  ]
+}

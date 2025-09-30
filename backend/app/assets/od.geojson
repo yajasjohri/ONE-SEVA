@@ -1,0 +1,6 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"name":"Odisha","state_code":"OD"},"geometry":{"type":"Polygon","coordinates":[[[81.5,17.6],[87.5,17.6],[87.5,22.8],[81.5,22.8],[81.5,17.6]]]}}
+  ]
+}
